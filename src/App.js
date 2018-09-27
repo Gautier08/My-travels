@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import React, { Component } from 'react';
+import logo from './logo.svg';
+import './App.css';
 
-import Quote from "./Quote";
+import Travels from "./Travels";
 
 class App extends Component {
   render() {
@@ -12,11 +12,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">My travels</h1>
         </header>
-        <Quote
-          Quote="I believe the children are the future... Unless we stop them now!"
-          country="Maroc"
-          photo="https://images.salaun-holidays.com/(Image)-image-Maroc-Ouarzazate-Casbah-Amahidil-44-it_72255885-09032017.jpg"
-          distance="2600 km"
+        <Travels
         />
       </div>
     );

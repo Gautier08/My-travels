@@ -1,26 +1,12 @@
-import React, { Component } from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import React from "react";
 
-import Quote from "./Quote";
+const Travel = ({ destination, country, photo, distance }) => (
+  <figure>
+    <h1>{destination}</h1>
+    <h3>{country}</h3>
+    <img src={photo} alt={destination} />
+    <figcaption>{distance}</figcaption>
+  </figure>
+);
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">My travels</h1>
-        </header>
-        <Quote
-          Quote="I believe the children are the future... Unless we stop them now!"
-          country="Maroc"
-          photo="https://images.salaun-holidays.com/(Image)-image-Maroc-Ouarzazate-Casbah-Amahidil-44-it_72255885-09032017.jpg"
-          distance="2600 km"
-        />
-      </div>
-    );
-  }
-}
-
-export default App;
+export default Travel;

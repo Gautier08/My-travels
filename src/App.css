@@ -2,9 +2,13 @@
   text-align: center;
 }
 
-.App-logo {
+.Work {
   animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  height: 115px;
+}
+
+.Break {
+  height: 115px;
 }
 
 .App-header {
